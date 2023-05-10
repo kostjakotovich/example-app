@@ -12,6 +12,24 @@
         @csrf
         <button>Log out</button>
     </form>
+    <div style="border: 3px solid black;">
+        <h2>Create a new post</h2>
+        <form action="/create-post" method="POST">
+            @csrf
+            <input name='title' type="text" placeholder="Title">
+            <textarea name="body" placeholder="Content"></textarea>
+            <button>Send</button>
+        </form>
+    </div>
+    <div style="border: 3px solid black;">
+        <h2>All posts</h2>
+        @foreach ($posts as $post)
+            <div style="background-color: grey; padding: 10px; margin: 10px;">
+                <h3>{{$post['title']}}</h3>
+                {{$post['body']}}
+            </div>
+        @endforeach
+    </div>
     @else
     <div style="border: 3px solid black;">
         <h2>Registration</h2>
