@@ -6,6 +6,11 @@
     <title>Document</title>
 </head>
 <body>
+    <form action="/test" method="POST">
+        @csrf
+        <button>TEST</button>
+    </form>
+
     @auth
     <p>You're logged in!</p>
     <form action="/logout" method="POST">

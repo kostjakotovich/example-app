@@ -1,3 +1,9 @@
+## Guide
+1. Blade.php
+2. Create a file for table (migration), use command for terminal (4)
+3. web.php
+4. 
+
 ## Composer install
 - php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
 - php -r "if (hash_file('sha384', 'composer-setup.php') === '55ce33d7678c5a611085589f1f3ddf8b3c52d662cd01d4ba75c0ee0459970c2200a51f492d557530c71c15d8dba01eae') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
@@ -11,9 +17,10 @@
 - php artisan serve
 
 ## Commands for terminal
-- artisan make:controller UserController
-- php artisan migrate 
+- artisan make:controller nameOfController
+- php artisan migrate (for creating tables)
 - php artisan make:model
+- php artisan make:model nameOfModel -m (model and migration in one)
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 

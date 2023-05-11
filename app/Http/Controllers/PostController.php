@@ -31,7 +31,7 @@ class PostController extends Controller
     public function actuallyUpdatePost(Post $post, Request $request)
     {
         if (auth()->user()->id !== $post['user_id']) {
-            return redirect('/');
+            return redirect('/'); 
         }
 
         $inputFields = $request->validate([
