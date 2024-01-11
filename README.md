@@ -1,8 +1,8 @@
 ## Guide
-1. Blade.php
-2. Create a file for table (migration), use command for terminal (4)
-3. web.php
-4. 
+1. resources/views/Blade.php (display content on website)
+2. Create a file for table (migration), use command for terminal (4), for add or make changes in database
+3. routes/web.php for setting routes
+4. app/http/controllers for classes (methods)
 
 ## Composer install
 - php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
