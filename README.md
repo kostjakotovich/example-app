@@ -3,6 +3,7 @@
 2. Create a file for table (migration), use command for terminal (4), for add or make changes in database
 3. routes/web.php for setting routes
 4. app/http/controllers for classes (methods)
+5. .env file, you can find a database configuration
 
 ## Composer install
 - php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
